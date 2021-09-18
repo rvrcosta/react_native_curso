@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 
 // import Primeiro from './components/Primeiro'
 // import CompPadrao , {Comp1,Comp2} from './components/Multi'
@@ -11,9 +11,15 @@ import { View, Text, StyleSheet } from 'react-native'
 // import Pai from './components/indireta/Pai'
 // import ContadorV2 from './components/contador/ContadorV2'
 import Diferenciar from './components/Diferenciar'
+import If from './components/If'
+import ParImpar from './components/ParImpar'
+import ListaProdutos from './components/produtos/ListaProdutos'
+import Familia from './components/relacao/Familia'
+import Membro from './components/relacao/Membro'
+import UsuarioLogado from './components/UsuarioLogado'
 
 export default () => (
-    <View style={style.NomeStyle}>
+    <SafeAreaView style={style.NomeStyle}>
         {/* 
         
         <Primeiro/>
@@ -33,13 +39,26 @@ export default () => (
         <Contador inicial={0} passo={3}/>
         <Pai/>
         <ContadorV2/>
-
-        */}
-    
         <Diferenciar/>
+        <ParImpar num="1"/>
+        
+        <Familia>
+            <Membro nome="Rodrigo" sobrenome="Costa"></Membro>
+            <Membro nome="Michelle" sobrenome="Costa"></Membro>
+            <Membro nome="Cristina" sobrenome="Rocha"></Membro>
+        </Familia>
 
-
-    </View>
+        <Familia>
+            <Membro nome="Pericles" sobrenome="Santos"></Membro>
+            <Membro nome="Samara" sobrenome="Silva"></Membro>
+        </Familia>  
+        
+        <UsuarioLogado usuario={ {nome: 'Gui', email: 'rvrcosta@outlook.com' } }></UsuarioLogado>
+        <UsuarioLogado usuario={ {nome: 'Ana'} }></UsuarioLogado>
+        */}
+        <ListaProdutos></ListaProdutos>
+        
+        </SafeAreaView>
     )
 
 const style = StyleSheet.create({
