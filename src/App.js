@@ -11,9 +11,16 @@ import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 // import Pai from './components/indireta/Pai'
 // import ContadorV2 from './components/contador/ContadorV2'
 import Diferenciar from './components/Diferenciar'
+import DigiteSeuNome from './components/DigiteSeuNome'
 import If from './components/If'
+import FlexBoxV1 from './components/layout/FlexBoxV1'
+import FlexBoxV2 from './components/layout/FlexBoxV2'
+import FlexBoxV3 from './components/layout/FlexBoxV3'
+import FlexBoxV4 from './components/layout/FlexBoxV4'
+import Quadrado from './components/layout/Quadrado'
 import ParImpar from './components/ParImpar'
 import ListaProdutos from './components/produtos/ListaProdutos'
+import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
 import Familia from './components/relacao/Familia'
 import Membro from './components/relacao/Membro'
 import UsuarioLogado from './components/UsuarioLogado'
@@ -55,9 +62,19 @@ export default () => (
         
         <UsuarioLogado usuario={ {nome: 'Gui', email: 'rvrcosta@outlook.com' } }></UsuarioLogado>
         <UsuarioLogado usuario={ {nome: 'Ana'} }></UsuarioLogado>
-        */}
         <ListaProdutos></ListaProdutos>
-        
+        <ListaProdutosV2></ListaProdutosV2>
+        <DigiteSeuNome></DigiteSeuNome>
+        <Quadrado/>
+        <Quadrado cor="#2e5c43"/>
+        <Quadrado cor="#034"/>
+        <Quadrado cor="#ff1"/>
+        <FlexBoxV1/>
+        <FlexBoxV2/>
+        <FlexBoxV3/>
+        */}
+
+        <FlexBoxV4/>
         </SafeAreaView>
     )
 
