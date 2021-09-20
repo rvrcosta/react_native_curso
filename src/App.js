@@ -10,20 +10,21 @@ import { View, Text, StyleSheet, SafeAreaView } from 'react-native'
 // import Contador from './components/Contador'
 // import Pai from './components/indireta/Pai'
 // import ContadorV2 from './components/contador/ContadorV2'
-import Diferenciar from './components/Diferenciar'
-import DigiteSeuNome from './components/DigiteSeuNome'
-import If from './components/If'
-import FlexBoxV1 from './components/layout/FlexBoxV1'
-import FlexBoxV2 from './components/layout/FlexBoxV2'
-import FlexBoxV3 from './components/layout/FlexBoxV3'
-import FlexBoxV4 from './components/layout/FlexBoxV4'
-import Quadrado from './components/layout/Quadrado'
-import ParImpar from './components/ParImpar'
-import ListaProdutos from './components/produtos/ListaProdutos'
-import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
-import Familia from './components/relacao/Familia'
-import Membro from './components/relacao/Membro'
-import UsuarioLogado from './components/UsuarioLogado'
+// import Diferenciar from './components/Diferenciar'
+// import DigiteSeuNome from './components/DigiteSeuNome'
+// import If from './components/If'
+// import FlexBoxV1 from './components/layout/FlexBoxV1'
+// import FlexBoxV2 from './components/layout/FlexBoxV2'
+// import FlexBoxV3 from './components/layout/FlexBoxV3'
+// import FlexBoxV4 from './components/layout/FlexBoxV4'
+// import Quadrado from './components/layout/Quadrado'
+// import ParImpar from './components/ParImpar'
+// import ListaProdutos from './components/produtos/ListaProdutos'
+// import ListaProdutosV2 from './components/produtos/ListaProdutosV2'
+// import Familia from './components/relacao/Familia'
+// import Membro from './components/relacao/Membro'
+// import UsuarioLogado from './components/UsuarioLogado'
+import Mega from './components/mega/Mega'
 
 export default () => (
     <SafeAreaView style={style.NomeStyle}>
@@ -72,9 +73,11 @@ export default () => (
         <FlexBoxV1/>
         <FlexBoxV2/>
         <FlexBoxV3/>
+        <FlexBoxV4/>
         */}
 
-        <FlexBoxV4/>
+        <Mega qtdeNumeros={7}/>
+
         </SafeAreaView>
     )
 
